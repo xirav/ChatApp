@@ -1,0 +1,14 @@
+server {
+  listen 80;
+  server_name 3.137.183.156;
+  location = /favicon.ico { access_log off; log_not_found off; }
+  location /static/ {
+      root /new_chatapp;
+  }
+  location / {
+      include proxy_params;
+      proxy_pass http://unix:/new_chatapp/new_chatapp.sock;
+  }
+
+}
+
