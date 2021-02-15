@@ -103,10 +103,10 @@ CHANNEL_LAYERS = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'awschatapp',
-        'USER': 'admin',
-        'PASSWORD': 'ezeebeehcl',
-        'HOST': 'aws-chatapp.csejma6mxjzd.us-east-2.rds.amazonaws.com',
+        'NAME': 'kuldeepmysql',
+        'USER': 'kuldeep',
+        'PASSWORD': 'kuldeeppatil',
+        'HOST': 'database-1.cbwipzis0vg6.ap-south-1.rds.amazonaws.com',
         'PORT': '3306',
     }
 }
